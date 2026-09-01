@@ -1,0 +1,31 @@
+name: 功能建议
+description: 建议新的Agent能力、规则、评测或工程改进
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: 业务问题
+      description: 先说明需要解决的问题，不要只给技术名称。
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: 建议方案
+      description: 说明流程、输入输出、权限和失败处理。
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: 验收标准
+      description: 给出可测试的完成条件或评测指标。
+    validations:
+      required: true
+  - type: textarea
+    id: risks
+    attributes:
+      label: 风险与人工边界
+      description: 说明数据、权限、模型错误及Human-in-the-loop影响。
