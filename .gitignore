@@ -1,0 +1,59 @@
+# Dependencies
+node_modules/
+**/node_modules/
+
+# Environment variables (NEVER commit these)
+.env
+**/.env
+*.env.local
+
+# Build outputs
+dist/
+build/
+**/dist/
+
+# Prisma generated
+backend/node_modules/.prisma/
+backend/prisma/data/
+*.db
+*.db-journal
+.pnpm-store/
+
+# Public benchmark datasets are downloaded locally and are not redistributed
+backend/benchmarks/datasets/*
+!backend/benchmarks/datasets/README.md
+backend/benchmarks/real/*.json
+backend/benchmarks/real/*.csv
+backend/benchmarks/real/*.md
+backend/benchmarks/benchmark-50-*.json
+backend/benchmarks/benchmark-50-*.csv
+backend/benchmarks/benchmark-50-*.md
+backend/benchmarks/artifact-work/
+backend/benchmarks/outputs/
+
+# Local model/runtime data
+backend/storage/
+*.gguf
+*.safetensors
+
+# Logs
+*.log
+**/backend.log
+**/frontend.log
+npm-debug.log*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.suo
+*.user
+
+# TypeScript
+*.tsbuildinfo
+
+# Local notes
+CLAUDE.md
